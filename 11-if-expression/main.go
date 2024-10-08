@@ -13,6 +13,7 @@ func main()  {
     fmt.Println("Gak hello")
   }
 
+  // inisialisasi variable sekaligus dijadikan kondisi
   if length := len(name); length > 5 {
     fmt.Println("Terlalu panjang")
   } else {

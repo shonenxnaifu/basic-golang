@@ -25,11 +25,13 @@ func runApp(error bool) {
 		panic("Error on Application")
 	}
 
+	// ketika panic code ini tidak akan dieksekusi
+	// tapi code lain diluar function tetap dieksekusi
 	fmt.Println("Application running")
 }
 
 func main() {
 	//runApplication()
 	runApp(true)
-  fmt.Println("runn")
+	fmt.Println("runn")
 }

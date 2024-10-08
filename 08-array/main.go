@@ -21,6 +21,8 @@ func main() {
 	fmt.Println(len(names))
 	fmt.Println(len(values))
 
+	// panjang array pada go mengikuti jumlah array pada saat deklarasi/inisialisasi
+	// tidak mengikuti jumlah isi array
 	var lagi [10]string
 	fmt.Println(len(lagi))
 }

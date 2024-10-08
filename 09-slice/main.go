@@ -24,14 +24,20 @@ func main() {
 	fmt.Println(len(slice1))
 	fmt.Println(cap(slice1))
 
+	// data dari slice bersifat mutable
+	// dapat diubah walaupun sudah diinisialisasi
 	// months[5] = "diubah"
 
 	// slice1[0] = "Mei Lagi"
 	// fmt.Println(months)
 
+	
 	var slice2 = months[11:]
 	fmt.Println(slice2)
 
+	// append akan membuat slice baru
+	// sehingga data hasil dari append 
+	// tidak merefer ke slice yang udah diinisialisasi sebelumnya (months)
 	var slice3 = append(slice2, "Eko")
 	fmt.Println(slice3)
 
@@ -51,6 +57,7 @@ func main() {
 	fmt.Println(len(newSlice))
 	fmt.Println(cap(newSlice))
 
+	// copy slice perlu mendefinisikan len dan cap dari slice yang akan dicopy
 	copySlice := make([]string, len(newSlice), cap(newSlice))
 	copy(copySlice, newSlice)
 	fmt.Println(copySlice)
@@ -60,5 +67,4 @@ func main() {
 
 	fmt.Println(iniArray)
 	fmt.Println(iniSlice)
-
 }

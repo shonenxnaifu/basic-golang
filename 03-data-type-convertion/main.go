@@ -14,7 +14,10 @@ func main()  {
   var name = "Eko"
   var e byte = name[0]
   var estring string = string(e)
+  var k byte = name[1]
+  kstring := string(k)
 
   fmt.Println(name)
   fmt.Println(estring)
+  fmt.Println(kstring)
 }
